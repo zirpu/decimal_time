@@ -26,8 +26,7 @@
         },
         "python-baseconv": {
             "hashes": [
-                "sha256:0539f8bd0464013b05ad62e0a1673f0ac9086c76b43ebf9f833053527cd9931b",
-                "sha256:cbb4d1b60ee5ad77a88ed7481b88e0b2e6e58b511f92f2f820c7b397094f5a11"
+                "sha256:0539f8bd0464013b05ad62e0a1673f0ac9086c76b43ebf9f833053527cd9931b"
             ],
             "index": "pypi",
             "version": "==1.2.2"
