@@ -1,11 +1,40 @@
-from decimal_time import decimal_time
+from colorama import Fore
+
+# from decimal_time import decimal_time
+from decimal_time.decimal_time import color_time_list, main, return_time_list
+
+# import baseconv
+# import time
+# import datetime
 
 
-def test_fib() -> None:
-    assert decimal_time.fib(0) == 0
-    assert decimal_time.fib(1) == 1
-    assert decimal_time.fib(2) == 1
-    assert decimal_time.fib(3) == 2
-    assert decimal_time.fib(4) == 3
-    assert decimal_time.fib(5) == 5
-    assert decimal_time.fib(10) == 55
+ts = 1440950558
+expect_tl = ["14", "4", "0", "9", "5", "05", "58"]
+colors = [
+    Fore.MAGENTA,
+    Fore.BLUE,
+    Fore.CYAN,
+    Fore.GREEN,
+    Fore.YELLOW,
+    Fore.RED,
+    Fore.WHITE,
+]
+
+
+def test_return_time_list():
+    assert return_time_list(ts) == expect_tl
+
+
+def test_color_time_list():
+    cl = color_time_list(expect_tl)
+    ecl = ["".join(i) for i in zip(colors, expect_tl, [Fore.RESET] * len(expect_tl))]
+    for i in zip(cl, ecl):
+        assert i[0] == i[1]
+
+
+# this is a crap test.
+def test_main():
+    assert main([]) is None
+
+
+##
