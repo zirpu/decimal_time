@@ -41,8 +41,4 @@ def test_main():
     assert decimal_time.main([]) is None
 
 
-def test_foo():
-    assert True
-
-
 ##
