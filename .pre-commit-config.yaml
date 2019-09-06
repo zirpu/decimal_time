@@ -40,7 +40,7 @@ repos:
     types: [python]
     verbose: true
     pass_filenames: false
-    #exclude: "^setup.py$"
+    always_run: true
 
   - id: pytest-cov
     name: pytest
