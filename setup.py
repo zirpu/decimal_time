@@ -17,7 +17,7 @@ with open(path.join(here, "README.rst"), encoding="utf-8") as f:
 
 setup(
     name="decimal_time",
-    version="version='0.3.1'",
+    version="version='0.4.0'",
     description="Decimal Time utilities and a cli.",
     long_description=long_description,
     long_description_content_type="text/x-rst",
