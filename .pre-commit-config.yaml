@@ -39,6 +39,7 @@ repos:
     entry: pipenv run pytest
     types: [python]
     verbose: true
+    args: ["-v"]
     exclude: "^setup.py$"
 
   - id: pytest-cov
