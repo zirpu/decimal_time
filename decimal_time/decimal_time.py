@@ -115,5 +115,9 @@ def main(argv=None):
     print(a)
 
 
+def dumb_test():
+    return True
+
+
 if __name__ == "__main__":
     main(sys.argv[1:])
