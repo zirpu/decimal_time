@@ -39,8 +39,8 @@ repos:
     entry: pipenv run pytest
     types: [python]
     verbose: true
-    args: ["-v", "-v", "--cache-clear"]
-    exclude: "^setup.py$"
+#    args: ["-v", "-v", "--cache-clear"]
+#    exclude: "^setup.py$"
 
   - id: pytest-cov
     name: pytest
