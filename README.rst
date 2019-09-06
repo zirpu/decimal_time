@@ -1,5 +1,11 @@
 # decimal time
 
+Simple python code kata exercise.
+
+trying to use pre-commit, but fails during pytest collection
+(finds 0).
+
+
 ## Setup
 ```sh
 # Install dependencies
