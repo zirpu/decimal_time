@@ -15,7 +15,6 @@ here = path.abspath(path.dirname(__file__))
 with open(path.join(here, "README.rst"), encoding="utf-8") as f:
     long_description = f.read()
 
-
 setup(
     name="decimal_time",
     version="0.1.0",
@@ -55,5 +54,5 @@ setup(
     #
     # For example, the following would provide a command called `sample` which
     # executes the function `main` from this package when invoked:
-    entry_points={"console_scripts": ["decimal_time=decimal_time.decimal_time:main"]},
+    entry_points={"console_scripts": ["decimal_time=decimal_time:main"]},
 )
