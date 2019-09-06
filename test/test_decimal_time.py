@@ -8,6 +8,7 @@ from decimal_time import decimal_time
 
 
 ts = 1440950558
+expect_ts = "14:4:0:9 5:05:58"
 expect_tl = ["14", "4", "0", "9", "5", "05", "58"]
 colors = [
     Fore.MAGENTA,
@@ -18,6 +19,10 @@ colors = [
     Fore.RED,
     Fore.WHITE,
 ]
+
+
+def test_time_string():
+    assert decimal_time.time_string(ts) == expect_ts
 
 
 def test_return_time_list():
