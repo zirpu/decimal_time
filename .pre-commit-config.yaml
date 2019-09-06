@@ -38,7 +38,7 @@ repos:
     language: system
     entry: pipenv run pytest
     types: [python]
-    exclude: setup.py
+    #exclude: setup.py
 
   - id: pytest-cov
     name: pytest
