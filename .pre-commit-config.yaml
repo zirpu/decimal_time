@@ -36,10 +36,10 @@ repos:
     name: pytest
     stages: [commit]
     language: system
-    entry: pipenv run pytest -v
+    entry: pipenv run pytest -v --trace
     types: [python]
     verbose: true
-    args: ["-v", "-v", "--cache-clear"]
+    args: ["-v", "-v", "--cache-clear", "--trace"]
     exclude: "^setup.py$"
 
   - id: pytest-cov
