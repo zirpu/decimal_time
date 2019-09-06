@@ -66,6 +66,10 @@ def time_string(ts, color=False, base=10):
     """Returns a timestring in 'yy:m:w:d h:mm:ss' format, optionally ansi color coded.
 
     Uses base 10 as default.
+    :param int ts: unix timestamp.
+    :param bool color: colorize the string, default: False
+    :param int base: number base for output.  default 10. valid 2-64.
+
     """
 
     a = return_time_list(ts, base=base)
