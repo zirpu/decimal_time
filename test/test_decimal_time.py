@@ -23,6 +23,7 @@ colors = [
 
 def test_time_string():
     assert decimal_time.time_string(ts) == expect_ts
+    False
 
 
 def test_return_time_list():
