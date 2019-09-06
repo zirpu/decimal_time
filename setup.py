@@ -39,7 +39,7 @@ setup(
         "Programming Language :: Python :: 3.7",
     ],
     # keywords='',  # Optional
-    packages=find_packages(),  # (exclude=["decimal_time"]),
+    packages=find_packages(exclude=["test"]),
     python_requires=">=3.6, <4",
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
