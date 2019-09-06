@@ -36,7 +36,7 @@ repos:
     name: pytest
     stages: [commit]
     language: system
-    entry: pipenv run pytest
+    entry: pipenv run pytest -v
     types: [python]
     verbose: true
     args: ["-v", "-v", "--cache-clear"]
