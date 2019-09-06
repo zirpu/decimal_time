@@ -1,11 +1,10 @@
+#
+
 from colorama import Fore
 
-# from decimal_time import decimal_time
-from decimal_time.decimal_time import color_time_list, main, return_time_list
+from decimal_time import decimal_time
 
-# import baseconv
-# import time
-# import datetime
+# from decimal_time.decimal_time import color_time_list, main, return_time_list
 
 
 ts = 1440950558
@@ -22,11 +21,11 @@ colors = [
 
 
 def test_return_time_list():
-    assert return_time_list(ts) == expect_tl
+    assert decimal_time.return_time_list(ts) == expect_tl
 
 
 def test_color_time_list():
-    cl = color_time_list(expect_tl)
+    cl = decimal_time.color_time_list(expect_tl)
     ecl = ["".join(i) for i in zip(colors, expect_tl, [Fore.RESET] * len(expect_tl))]
     for i in zip(cl, ecl):
         assert i[0] == i[1]
@@ -34,7 +33,7 @@ def test_color_time_list():
 
 # this is a crap test.
 def test_main():
-    assert main([]) is None
+    assert decimal_time.main([]) is None
 
 
 ##
