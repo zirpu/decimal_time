@@ -22,7 +22,7 @@ repos:
     language: system
     entry: pipenv run flake8
     types: [python]
-#    exclude: setup.py
+    exclude: setup.py
 
   - id: mypy
     name: mypy
@@ -38,6 +38,7 @@ repos:
     language: system
     entry: pipenv run pytest
     types: [python]
+    exclude: setup.py
 
   - id: pytest-cov
     name: pytest
@@ -46,3 +47,4 @@ repos:
     entry: pipenv run pytest --cov --cov-fail-under=100
     types: [python]
     pass_filenames: false
+    exclude: setup.py
